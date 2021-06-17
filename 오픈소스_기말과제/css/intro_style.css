@@ -1,0 +1,60 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.nav {
+    background-color: rgba(255,255,255,0.5);
+    width: 1450px;
+    height: 100px;
+    padding: 0px 20px;
+    margin-left: 15px;
+}
+.nav a img{
+    float: left;
+    margin-top: 5px;
+}
+
+.menu li {
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: right; 
+    line-height: 70px;
+    font-family: 'Pangolin', cursive;
+}
+.menu li a {
+    display:block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu li a:hover{
+    color:darkcyan;
+}
+.memo {
+   width: 700px;
+}
+
+.bg {
+    margin-left: 800px;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+.intro{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    z-index: 10;
+}
+.intro p{
+  font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+}
+.photo{
+    width: 530px;
+    float: left;
+    margin-left: 180px;
+}

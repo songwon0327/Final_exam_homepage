@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Songwon</title>
+      <link rel="stylesheet" href="css/index_style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+     
+       <script>
+       window.onload = function()
+       {
+            
+            var clk = document.getElementById('clock');
+          
+           setInterval(function() {
+                        var now = new Date();
+                        var hour = now.getHours();
+                        var min = now.getMinutes();
+                        var sec = now.getSeconds();
+           clk.innerHTML = `${hour <10 ? `0${hour}`:hour}:${min<10 ? `0${min}`:min}:${sec<10 ? `0${sec}`:sec}`}, 100);
+           
+            var date = document.getElementById('day');
+           setInterval(function() {
+                        var now = new Date();
+                        var mon = now.getMonth();
+                        var days = now.getDate();
+           var week =new Array('SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT');
+           var day = week[now.getDay()];
+           date.innerHTML = `${mon+1<10 ? `0${mon+1}`:mon+1}.${days<10 ? `0${days}`:days}.${day}`}, 100);
+       };  
+        </script>
+  </head>
+    <body>
+       <div class="nav">
+           <a href="index.html"><img src="img/flower.png" width="90"> </a>
+        <ul class="menu">
+            <li><a href="Se.html" title="2021.05.01">Seoul</a></li>
+            <li><a href="MS.html" title="2021.01.07">Making snowman</a></li>
+            <li><a href="Gn.html" title="2020.08.10-2020.08.12">Gangneung</a></li>
+            <li><a href="BD.html" title="2020.01.08-2020.01.09">Busan - Daegu</a></li>
+           </ul>
+        </div>
+        <div class="intro">
+         <h1 id="day"></h1>
+         <h1 id="clock"></h1>  
+        <div class="info">
+            <a href="introduce.html">Introduce</a>
+            </div>
+        </div>
+  
+    </body>
+</html>
